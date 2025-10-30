@@ -1,0 +1,21 @@
+FIREBASE FIRESTORE CLEANUP INSTRUCTIONS
+========================================
+
+To show only the 2 authenticated users in your app:
+
+1. Go to Firebase Console: https://console.firebase.google.com
+2. Select your project "secure"
+3. Click "Firestore Database" in the left sidebar
+4. Click on the "users" collection
+5. Look for users that don't have matching emails in Authentication page
+6. Delete those user documents (the ones that are NOT in Authentication)
+
+The 2 users that SHOULD stay (from Authentication page):
+- luohino.pinsry@gmail.com
+- aniketsingh821305@gmail.com
+
+DELETE any other user documents from Firestore that are NOT in the list above.
+
+IMPORTANT: Only delete from Firestore "users" collection, NOT from Authentication!
+
+Alternative: If you want me to add code to auto-cleanup on app start, I can do that too.
